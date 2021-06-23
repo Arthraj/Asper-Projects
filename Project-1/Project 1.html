@@ -3,6 +3,11 @@
 <head>
 	<title>Project 3</title>
 	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
 		#upperbox{
 			background-image: url(images/1489187.jpg);
 			background-repeat: repeat;
@@ -18,49 +23,51 @@
 			
 		}
 				#topmost{
-					font-size: 60px; 	 
+					font-weight: bolder;
+					font-size: 50px;
+					margin: 0;
+					padding: 0; 	 
 				}
+
+				#textyy{
+					margin: 2px;
+				}
+		
 
 		#navigation{
 			width: 70%;
 			margin: 0 auto 0 auto;
-			padding-bottom: 10px; 
 			background-color: blue;
-			
-
 		}
 
 			#navigation ul li{
 				display: inline-block;
 				text-decoration: none;
 				text-align: center;
-				padding:13px;
-				padding-left: 0px;
+				padding:15px;
 				background-color: blue;
-				
 			}
-
+			
+			
 			#navigation ul{
-				margin:0px;
-
-
+				padding: 0;
+				margin: 0;
 			}
 
-			#navigation a{
+			#navigation ul li a{
 				color: white;
-				font-size: 20px;
 				text-decoration: none;
 				font-size: 13px;
-				margin-right: 20px;
-
 			}
 
-				#active{
-					background-color: darkblue;
-					margin-left: -40px; 
-					padding: 15px;
-					padding-bottom: 23px;
-				}
+			
+			#navigation ul .bluish{
+				background-color: darkblue;
+			}
+			
+			#navigation ul li:hover{
+				background-color: darkblue;
+			}
 
 			#lowerbox{
 				background-image: url(images/abcd.jpg);
@@ -133,14 +140,11 @@
 
 			#copyright{
 				width: 100%;
-				margin: 0 auto 0 auto;
 				clear: both;
 				background-color: blue;
 				color: white;
 				text-align: center;
-				padding: 2px;
 				font-size: 12px;
-
 			}
 
 			
@@ -149,16 +153,20 @@
 <body>
 
 <div id="upperbox">
+	
 	<div id="headtext">
-	<h1 id="topmost">textured<span style="color: blue">blue</span></h1>	
-	<p>simple contemporary website template</p>
+		<br><br>
+	<p id="topmost">textured<span style="color: blue">blue</span></p>	
+	<p id="textyy">simple contemporary website template</p>
+	<br><br>
+	
 	</div>
 
 
 	<div id="navigation">
 		<nav>
 			<ul><b>
-				<li ><a id="active" href="#">HOME</a></li>
+				<li class="bluish"><a href="#" class="bluish">HOME</a></li>
 				<li><a href="#">EXAMPLES</a></li>
 				<li><a href="#">APAGE</a></li>
 				<li><a href="#">ANOTHER PAGE</a></li>
@@ -246,7 +254,7 @@
 					</div>
 			</div>
 
-	</div>
+			</div>
 
 	<div id="copyright">
 		
